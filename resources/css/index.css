@@ -86,6 +86,10 @@
     flex-flow: row wrap;
     justify-content: center;
   }
+  .hero-container p,
+  form {
+    display: none;
+  }
 
   .container-bottom p {
     font-size: 32px;
@@ -136,20 +140,82 @@
   body {
     font-family: 'Ropa Sans', sans-serif;
   }
+  form {
+    display: inline-flex;
+    position: absolute;
+    bottom: 50%;
+    left: 8.3%;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .company-logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .company-logo img {
+  }
+
+  .container-bottom {
+    display: none;
+  }
+
+  .email-input {
+    background: #ffffff;
+    border: 1px solid #793a13;
+    box-sizing: border-box;
+    border-radius: 100px;
+    height: 48px;
+    width: 300px;
+  }
+
+  .hero-container {
+    position: relative;
+  }
+
+  .hero-container p {
+    font-size: 32px;
+    line-height: 48px;
+    color: #793a13;
+    position: absolute;
+    bottom: 60%;
+    left: 8.3%;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .motto {
+    position: absolute;
+  }
+
   nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     min-height: 5vh;
   }
-  .nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 20%;
+
+  .nav-canada-flag {
+    width: 1%;
+    margin-left: 1%;
   }
 
-  .nav-links li {
-    list-style: none;
+  .nav-coffino {
+    width: 50%;
+    margin-left: 5%;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 0 75%;
   }
 
   .nav-links a {
@@ -159,56 +225,15 @@
     line-height: 28px;
   }
 
-  .burger {
-    display: none;
-  }
-  .nav-coffino {
-    width: 50%;
-  }
-  .hero-container {
-    position: relative;
-  }
-  .hero-container p {
-    font-size: 32px;
-    line-height: 48px;
-    color: #793a13;
-    position: absolute;
-    bottom: 60%;
-    left: 8.3%;
-  }
-  .hero-image {
-    width: 100%;
+  .nav-links li {
+    list-style: none;
+    padding: 1%;
   }
 
-  .container-bottom {
-    display: none;
-  }
-  .nav-canada-flag {
-    width: 1%;
-  }
-  .company-logo {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .company-logo img {
-    width: 8%;
-  }
-  .motto {
-    position: absolute;
-  }
   .red-color {
     color: #b52b2b;
   }
-  .email-input {
-    background: #ffffff;
-    border: 1px solid #793a13;
-    box-sizing: border-box;
-    border-radius: 100px;
-    height: 48px;
-    width: 300px;
-  }
+
   .sign-up-now-btn {
     background: #b52b2b;
     border-radius: 100px;
@@ -218,12 +243,5 @@
     top: 1%;
     bottom: 1%;
     height: 98%;
-  }
-
-  form {
-    display: inline-flex;
-    position: absolute;
-    bottom: 50%;
-    left: 8.3%;
   }
 }
