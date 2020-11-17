@@ -12,7 +12,7 @@
     <title>Coffino</title>
   </head>
   <body>
-    <nav class="nav-styling">
+    <nav class="container">
       <picture>
         <source
           srcset="./resources/assets/logo_without_beans.png"
@@ -28,6 +28,12 @@
           class="nav-coffino-no-beans-logo"
         />
       </picture>
+      <ul>
+        <li>About</li>
+        <li>Products</li>
+        <li>Customers</li>
+        <li>Login</li>
+      </ul>
 
       <img
         src="./resources/assets/canada_plag.png"
@@ -75,13 +81,17 @@
         alt="McDonalds Logo"
       />
     </div>
-    <div>
-      <div class="font-style">The World's <span>Best</span></div>
+    <div class="container-bottom">
+      <div class="font-style">
+        The World's <span class="red-color"><em>Best</em></span>
+      </div>
       <div class="font-style">Coffee Subscription Service</div>
-      <button>Sign Up Now</button>
-      <button>Shop Now</button>
+    </div>
+    <div class="container-bottom">
+      <button type="button" class="sign-up-btn">Sign Up Now</button>
+      <button type="button" class="login-btn">Shop Now</button>
     </div>
 
-    <div class="font-style">Our Coffee Beans</div>
+    <div class="footer container-bottom">Our Coffee Beans</div>
   </body>
 </html>
