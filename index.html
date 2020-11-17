@@ -2,22 +2,57 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./resources/css/index.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffino</title>
   </head>
   <body>
-    <nav>
-      <img src="./resources/assets/logo_with_beans.png" alt="Coffino Beans" />
-      <img src="./resources/assets/canada_plag.png"
+    <nav class="nav-styling">
+      <picture>
+        <source
+          srcset="./resources/assets/logo_without_beans.png"
+          media="(max-width:375px)"
+        />
+        <source
+          srcset="./resources/assets/logo_with_beans.png"
+          media="(min-width:376px)"
+        />
+        <img
+          src="./resources/assets/logo_without_beans.png"
+          alt="Coffino Logo"
+          class="nav-coffino-no-beans-logo"
+        />
+      </picture>
+
+      <img
+        src="./resources/assets/canada_plag.png"
+        alt="Canada Flag"
+        class="nav-canada-flag"
+      />
     </nav>
     <div>
-      <img
-        src="./resources/assets/hero_image_full_width.png"
-        alt="Hero Image"
-      />
+      <picture>
+        <source
+          srcset="./resources/assets/hero_image_half_width.png"
+          media="(max-width:375px)"
+        />
+        <source
+          srcset="./resources/assets/hero_image_full_width.png"
+          media="(min-width:376px)"
+        />
+        <img
+          src="./resources/assets/hero_image_half_width.png"
+          alt="Hero Image"
+          class="hero-image-half-width"
+        />
+      </picture>
     </div>
-    <div>
+    <div class="company-logo">
       <img
         src="./resources/assets/client logos/A&W_Canada_Logo.png"
         alt="A&W Logo"
@@ -40,6 +75,13 @@
         alt="McDonalds Logo"
       />
     </div>
-    <div>Our Coffee Beans</div>
+    <div>
+      <div class="font-style">The World's <span>Best</span></div>
+      <div class="font-style">Coffee Subscription Service</div>
+      <button>Sign Up Now</button>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="font-style">Our Coffee Beans</div>
   </body>
 </html>
