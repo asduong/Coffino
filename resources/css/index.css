@@ -87,7 +87,7 @@
     justify-content: center;
   }
 
-  .font-style {
+  .container-bottom p {
     font-size: 32px;
     line-height: 48px;
     color: #793a13;
@@ -126,6 +126,10 @@
     align-self: center;
     margin: 20% 0%;
   }
+
+  .motto {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -160,16 +164,66 @@
   }
   .nav-coffino {
     width: 50%;
-    margin-left: -50%;
+  }
+  .hero-container {
+    position: relative;
+  }
+  .hero-container p {
+    font-size: 32px;
+    line-height: 48px;
+    color: #793a13;
+    position: absolute;
+    bottom: 60%;
+    left: 8.3%;
   }
   .hero-image {
     width: 100%;
-    height: 546.62px;
   }
+
   .container-bottom {
     display: none;
   }
   .nav-canada-flag {
     width: 1%;
+  }
+  .company-logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .company-logo img {
+    width: 8%;
+  }
+  .motto {
+    position: absolute;
+  }
+  .red-color {
+    color: #b52b2b;
+  }
+  .email-input {
+    background: #ffffff;
+    border: 1px solid #793a13;
+    box-sizing: border-box;
+    border-radius: 100px;
+    height: 48px;
+    width: 300px;
+  }
+  .sign-up-now-btn {
+    background: #b52b2b;
+    border-radius: 100px;
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    bottom: 1%;
+    height: 98%;
+  }
+
+  form {
+    display: inline-flex;
+    position: absolute;
+    bottom: 50%;
+    left: 8.3%;
   }
 }
