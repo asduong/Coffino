@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ropa Sans', sans-serif;
 }
 
 /* ----------- iPhone X ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   body {
-    font-family: 'Ropa Sans', sans-serif;
     overflow-x: hidden;
   }
 
@@ -124,10 +124,12 @@
   }
 
   .footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     font-size: 32px;
     line-height: 48px;
     color: #793a13;
-    align-self: center;
     margin: 20% 0%;
   }
 
@@ -137,9 +139,6 @@
 }
 
 @media only screen and (min-width: 992px) {
-  body {
-    font-family: 'Ropa Sans', sans-serif;
-  }
   form {
     display: inline-flex;
     position: absolute;
@@ -156,9 +155,12 @@
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+    margin: 4% 10%;
   }
 
   .company-logo img {
+    flex: 0 1 3%;
+    width: 9%;
   }
 
   .container-bottom {
@@ -176,6 +178,15 @@
     font-size: 20px;
     color: #cbc0b9;
     text-indent: 2%;
+  }
+
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 48px;
+    line-height: 72px;
+    color: #793a13;
   }
 
   .hero-container {
@@ -208,6 +219,7 @@
   .hero-image-half-width {
     display: none;
   }
+
   .motto {
     position: absolute;
   }
@@ -228,7 +240,7 @@
     margin-left: 5%;
   }
 
-  .nav-links {
+  ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -236,20 +248,53 @@
     margin-top: 0.8%;
   }
 
-  .nav-links a {
+  nav ul li a {
     text-decoration: none;
     color: #793a13;
     font-size: 18px;
     line-height: 28px;
   }
 
-  .nav-links li {
+  nav ul li {
     list-style: none;
     padding: 1%;
   }
   .nav-spacing {
     margin-left: 3.5%;
   }
+
+  nav ul li a:hover {
+    background-color: #f8eaea;
+  }
+
+  nav ul ul {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  nav ul li ul {
+    height: 12%;
+    width: 160px;
+    background: #b52b2b;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    z-index: 1;
+    display: list-item;
+  }
+  nav ul li ul a {
+    color: #ffffff;
+  }
+
+  nav ul li ul a:hover {
+    background-color: red;
+  }
+
+  nav ul li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+  }
+
   .red-color {
     color: #b52b2b;
   }
@@ -259,8 +304,9 @@
     border-radius: 100px;
     cursor: pointer;
     position: absolute;
-    right: 0;
-    height: 98%;
+    right: 1%;
+    top: 7%;
+    height: 85%;
     width: 144px;
     color: #ffffff;
   }
