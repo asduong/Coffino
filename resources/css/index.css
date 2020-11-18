@@ -16,7 +16,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 6vh;
+    min-height: 8vh;
+  }
+  nav ul li ul li {
+    display: none;
   }
 
   .nav-links {
@@ -29,7 +32,7 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 37%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
@@ -39,7 +42,7 @@
     opacity: 0;
   }
 
-  .nav-links a {
+  nav li a {
     text-decoration: none;
     color: #b52b2b;
   }
@@ -48,6 +51,8 @@
   }
 
   .burger {
+    font-size: 18px;
+    line-height: 28px;
     display: block;
     margin-right: 6%;
     color: #b52b2b;
@@ -66,8 +71,8 @@
     }
   }
   .nav-coffino {
-    width: 47%;
-    margin: 1% 0 1% 4%;
+    width: 52%;
+    margin: 1% 0 1% 6%;
   }
   .hero-image-half-width {
     width: 100%;
@@ -267,22 +272,24 @@
     background-color: #f8eaea;
   }
 
-  nav ul ul {
+  nav ul li ul {
     position: absolute;
     visibility: hidden;
     opacity: 0;
-  }
-
-  nav ul li ul {
     height: 12%;
-    width: 160px;
+    width: 9%;
     background: #b52b2b;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     z-index: 1;
     display: list-item;
+    list-style: none;
   }
-  nav ul li ul a {
+  nav ul li ul li {
+    margin-top: 4%;
+    margin-left: 5%;
+  }
+  nav ul li ul li a {
     color: #ffffff;
   }
 
