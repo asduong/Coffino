@@ -137,10 +137,6 @@
     color: #793a13;
     margin: 20% 0%;
   }
-
-  .motto {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -223,10 +219,6 @@
 
   .hero-image-half-width {
     display: none;
-  }
-
-  .motto {
-    position: absolute;
   }
 
   nav {
@@ -316,5 +308,191 @@
     height: 85%;
     width: 144px;
     color: #ffffff;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 990px) {
+  form {
+    display: inline-flex;
+    position: absolute;
+    bottom: 65%;
+    left: 8.3%;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .company-logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4% 10%;
+  }
+  #anw-logo {
+    width: 8%;
+  }
+
+  #tims-logo {
+    width: 13%;
+  }
+
+  #second-cup-logo {
+    width: 9%;
+  }
+
+  .company-logo img {
+    width: 5%;
+    margin: 5% 0;
+  }
+  .anw-logo {
+    width: 10%;
+  }
+
+  .container-bottom {
+    display: none;
+  }
+
+  .email-input {
+    background: #ffffff;
+    border: 1px solid #793a13;
+    box-sizing: border-box;
+    border-radius: 100px;
+    height: 48px;
+    width: 350px;
+    line-height: 28px;
+    font-size: 20px;
+    color: #cbc0b9;
+    text-indent: 2%;
+  }
+
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 48px;
+    line-height: 72px;
+    color: #793a13;
+  }
+
+  .hero-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero-container p {
+    font-size: 35px;
+    line-height: 72px;
+    color: #793a13;
+    position: absolute;
+    bottom: 75%;
+    left: 8.3%;
+  }
+
+  .hero-image {
+    width: 50%;
+    height: 400px;
+    background-image: url('../assets/hero_image_half_width.png');
+    z-index: -1;
+    background-size: 100% 100%;
+  }
+
+  .hero-image-half-width {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    min-height: 5vh;
+    position: sticky;
+    top: 0;
+  }
+
+  .nav-canada-flag {
+    width: 1.5%;
+    margin-top: 0.8%;
+    margin-right: 3%;
+  }
+
+  .nav-coffino {
+    width: 80%;
+    margin-left: 12%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 0 75%;
+    margin-top: 0.8%;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #793a13;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  nav ul li {
+    list-style: none;
+    padding: 1%;
+  }
+  .nav-spacing {
+    margin-left: 3.5%;
+  }
+
+  nav ul li a:hover {
+    background-color: #f8eaea;
+  }
+
+  nav ul li ul {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 170px;
+    width: 19%;
+    background: #b52b2b;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    z-index: 1;
+    display: list-item;
+    list-style: none;
+  }
+
+  nav ul li ul li {
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+  nav ul li ul li a {
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  nav ul li ul a:hover {
+    background-color: red;
+  }
+
+  nav ul li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .red-color {
+    color: #b52b2b;
+  }
+
+  .sign-up-now-btn {
+    background: #b52b2b;
+    border-radius: 100px;
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+    top: 7%;
+    height: 85%;
+    width: 120px;
+    color: #ffffff;
+    font-size: 16px;
   }
 }
