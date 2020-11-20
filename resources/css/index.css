@@ -314,7 +314,7 @@
     color: #ffffff;
   }
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 550px) and (max-width: 990px) {
   form {
     display: inline-flex;
     position: absolute;
