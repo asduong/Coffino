@@ -13,8 +13,8 @@ Desktop View 1920x1200 Hover Nav
 Desktop Split View
 <img src="resources/assets/screenshots/desktop-split.png">
 
-iPhone X View
+
 <img src="resources/assets/screenshots/iPhoneX.png">
 
-iPhone X Menu
+
 <img src="resources/assets/screenshots/iPhoneXBurger.png">
