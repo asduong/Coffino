@@ -501,6 +501,7 @@
   }
 }
 
+/* Retina Screens */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   form {
     display: inline-flex;
@@ -671,5 +672,176 @@
     width: 144px;
     color: #ffffff;
   }
-  /* Your Styles */
+  /* Non Retina */
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    form {
+      display: inline-flex;
+      position: absolute;
+      bottom: 50%;
+      left: 8.3%;
+    }
+
+    .burger {
+      display: none;
+    }
+
+    .company-logo {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+      margin: 4% 10%;
+    }
+
+    .company-logo img {
+      flex: 0 1 3%;
+      width: 9%;
+    }
+
+    .container-bottom {
+      display: none;
+    }
+
+    .email-input {
+      background: #ffffff;
+      border: 1px solid #793a13;
+      box-sizing: border-box;
+      border-radius: 100px;
+      height: 48px;
+      width: 475px;
+      line-height: 28px;
+      font-size: 20px;
+      color: #cbc0b9;
+      text-indent: 2%;
+    }
+
+    .footer {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      font-size: 48px;
+      line-height: 72px;
+      color: #793a13;
+    }
+
+    .hero-container {
+      position: relative;
+    }
+
+    .hero-container p {
+      font-size: 48px;
+      line-height: 72px;
+      color: #793a13;
+      position: absolute;
+      bottom: 60%;
+      left: 8.3%;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 600px;
+      background: linear-gradient(
+          80.79deg,
+          #ffffff 14.36%,
+          rgba(255, 255, 255, 0.710201) 38.99%,
+          rgba(139, 92, 92, 0) 71.4%
+        ),
+        url('../assets/hero_image_full_width.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    .hero-image-half-width {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      min-height: 5vh;
+    }
+
+    .nav-canada-flag {
+      width: 1.5%;
+      margin-top: 0.8%;
+    }
+
+    .nav-coffino {
+      width: 50%;
+      margin-left: 5%;
+    }
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex: 0 0 75%;
+      margin-top: 0.8%;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #793a13;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    nav ul li {
+      list-style: none;
+      padding: 1%;
+    }
+    .nav-spacing {
+      margin-left: 3.5%;
+    }
+
+    nav ul li a:hover {
+      background-color: #f8eaea;
+    }
+
+    nav ul li ul {
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      height: 12%;
+      width: 9%;
+      background: #b52b2b;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+      z-index: 1;
+      display: list-item;
+      list-style: none;
+    }
+    nav ul li ul li {
+      margin-top: 4%;
+      margin-left: 5%;
+    }
+    nav ul li ul li a {
+      color: #ffffff;
+    }
+
+    nav ul li ul a:hover {
+      background-color: red;
+    }
+
+    nav ul li:hover > ul {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .red-color {
+      color: #b52b2b;
+    }
+
+    .sign-up-now-btn {
+      background: #b52b2b;
+      border-radius: 100px;
+      cursor: pointer;
+      position: absolute;
+      right: 1%;
+      top: 7%;
+      height: 85%;
+      width: 144px;
+      color: #ffffff;
+    }
+  }
 }
